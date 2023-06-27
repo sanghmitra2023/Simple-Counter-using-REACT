@@ -1,37 +1,63 @@
-import React, { useState, useEffect } from "react";
+/*import React from "react";
+import { useState, useEffect } from "react";
 
-const SecondsCounter = () => {
-  const [count, setCount] = useState(0);
+
+const Home = () => {
+	const [count, setCount] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
+    setTimeout(() => {
       setCount((count) => count + 1);
     }, 1000);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
+  });
 
   const formattedCount = count.toString().padStart(6, "0");
   const digits = formattedCount.split("");
 
   return (
-        <div className="counter-container">
-            <div className="card empty-card">
-                <i class="fa fa-clock fa-2xl myclock"></i>
+        <div className="container">
+            <div className="clock">
+              <i class="fa fa-clock fa-2xl myclock"></i>
             </div>
-            <div className="card-container">
-                    {digits.map((digit, index) => (
-                <div key={index} className="card">
-                    <div className="card-body">
-                        <h3 className="card-text centered">{digit}</h3>
-                    </div>
-                </div>
-                    ))}
-            </div>
+          <div className="numbers">
+              {digits.map((digit, index) => (
+                <p className="text centered">{digit}</p>
+                  )
+                )}
+          </div>
         </div>
+       
     );
 };
 
-export default SecondsCounter;
+export default Home;
+
+
+body {
+  background-color: rgb(71, 203, 247);
+}
+
+.container {
+  justify-content: center;
+  display: flex;
+  margin-top: 100px;
+}
+
+.numbers {
+  display: flex;
+  font-size: 5rem;
+  background-color: black;
+  color: white;
+  width: 300px;
+  padding:10px;  
+}
+
+.clock{
+  display: flex;
+  font-size: 6rem;
+  background-color: black;
+  color: white;
+  width: 120px;
+  padding:25px;
+  
+}*/

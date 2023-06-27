@@ -1,15 +1,18 @@
 import React from "react";
-import SecondsCounter from "./secondscounter.jsx";
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+import Counter from "./Counter.jsx";
 
-//create your first component
+
+
+
 const Home = () => {
 	return (
-		<div className="d-flex justify-content-center mt-4">
-			<SecondsCounter/>
+		<div className="text-center d-flex justify-content-center mt-5">
+			<Counter />
 		</div>
 	);
 };
+
+
+
 
 export default Home;
